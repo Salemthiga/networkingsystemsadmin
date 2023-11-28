@@ -8,7 +8,7 @@ try:
         client_socket.send((payload.encode('utf-8')))
         data=client_socket.recv(1024)
         print(str(data))
-        more=input('Want to send more data to the server')
+        more=input('Want to send more data to the server:')
         if more.lower()=='y':
             payload= input('Enter payload')
         else:
