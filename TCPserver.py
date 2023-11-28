@@ -12,7 +12,7 @@ while True:
     print("client connected from", addr)
     while True:
         data=client_socket.recv(1024)
-        if not data or data.decode['ascii']=='END' :
+        if not data :
          break
         print("received from client: %s" %data.decode("utf-8"))
         try:
